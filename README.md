@@ -3,7 +3,7 @@ C++ program used to copy, edit, and prune images
 
 Shortened version of the spec:
 
-A bitmap image is composed of many identically-sized square pixels arranged in a grid. If the number of pixels is 2k2k by 2k2k for some kk, then one can build a quadtree with its root corresponding to the entire image, and with each leaf corresponding to a pixel. This provides us with an interesting way to store an image: put an RGBApixel into each leaf of an appropriate quadtree.
+A bitmap image is composed of many identically-sized square pixels arranged in a grid. If the number of pixels is 2^k by 2^k for some k, then one can build a quadtree with its root corresponding to the entire image, and with each leaf corresponding to a pixel. This provides us with an interesting way to store an image: put an RGBApixel into each leaf of an appropriate quadtree.
 
 getPixel will retrieve the pixel (i.e. the color) of the square region within which the smaller query grid cell would lie. (That is, it will return the element of the nonexistent leaf’s deepest surviving ancestor.)
 
