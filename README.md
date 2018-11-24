@@ -1,4 +1,4 @@
-# Png-manipulation
+# pngManipulation
 C++ program used to copy, edit, and prune images
 
 Shortened version of the spec:
@@ -9,7 +9,7 @@ getPixel will retrieve the pixel (i.e. the color) of the square region within wh
 
  clockwiseRotate rotates the Quadtree object’s underlying image clockwise by 90 degrees
  
- The prune function, given a tolerance value, prunes the Quadtree as extensively as possible. (Note, however, that we do not want the prune function to do an “iterative” prune. It is conceivable that by pruning some mid-level node nn, an ancestor pp of nn then becomes prunable, due to the fact that the prune changed the leaves descended from pp. Your prune function should evaluate the prunability of each node based on the presence of all nodes, and then delete the subtrees based at nodes deemed prunable.)
+The prune function, given a tolerance value, prunes the Quadtree as extensively as possible. (Note, however, that we do not want the prune function to do an “iterative” prune. It is conceivable that by pruning some mid-level node nn, an ancestor pp of nn then becomes prunable, due to the fact that the prune changed the leaves descended from pp. Your prune function should evaluate the prunability of each node based on the presence of all nodes, and then delete the subtrees based at nodes deemed prunable.)
  
 pruneSize takes a single argument, an integer tolerance. It returns an integer. This function is similar to prune; however, it does not actually prune the Quadtree; rather, it returns a count of the total number of leaves the Quadtree would have if it were pruned as in the prune function.
  
